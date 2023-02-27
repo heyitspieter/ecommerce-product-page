@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/blogr-landing-page-with-css-flexbox-L1LbjfwzDD](https://www.frontendmentor.io/solutions/blogr-landing-page-with-css-flexbox-L1LbjfwzDD)
-- Live Site URL: [https://blogr-one.vercel.app/](https://blogr-one.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-ecommerce-product-page-hWheBivNXQ](https://www.frontendmentor.io/solutions/responsive-ecommerce-product-page-hWheBivNXQ)
+- Live Site URL: [https://ecommerce-product-page-kappa-gold.vercel.app/](https://ecommerce-product-page-kappa-gold.vercel.app/)
 
 ## My process
 
