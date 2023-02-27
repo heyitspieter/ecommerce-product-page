@@ -28,7 +28,7 @@ export const retrieveCart = function () {
   const cart = localStorage.getItem('cart');
 
   if (cart) {
-    cartObj = JSON.parse(cart);
+    const cartObj = JSON.parse(cart);
 
     for (const key in cartObj) {
       cartState[key] = cartObj[key];
