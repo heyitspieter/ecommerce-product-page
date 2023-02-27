@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2.7rem 0 2.9rem;
+    max-width: var(--max-width);
+    border-bottom: 1px solid var(--border-color);
+
+    @media screen and (max-width: 66em) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    @media screen and (max-width: 49em) {
+        padding: 2rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navBtn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 1.6rem;
+                height: 1.5rem;
+                fill: #69707d;
+            }
+        }
+
+        @media screen and (max-width: 49em) {
+            display: flex;
+            margin-right: 1.4rem;
+        }
+    }
+}

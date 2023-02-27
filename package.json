@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-product-page",
+  "version": "1.0.0",
+  "description": "Ecommerce landing page built with HTML5 & SASS",
+  "source": "/index.html",
+  "scripts": {
+    "devserver": "live-server",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.css",
+    "compress:css": "node-sass css/style.css css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
+    "dev:css": "npm-run-all --parallel devserver watch:sass",
+    "start:css": "npm-run-all devserver",
+    "build": "parcel build",
+    "start": "parcel index.html"
+  },
+  "author": "Peter Paul",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0"
+  }
+}

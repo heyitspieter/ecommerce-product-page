@@ -1,0 +1,56 @@
+:root {
+    --font-primary: "Kumbh Sans", sans-serif;
+
+    --color-primary: hsl(26, 100%, 55%);
+    --color-primary-1: hsl(25, 100%, 94%);
+
+    --color-black: hsl(0, 0%, 0%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-dark-blue: hsl(220, 13%, 13%);
+    --color-gray-blue: hsl(220, 14%, 75%);
+    --color-gray-blue-dark: hsl(219, 9%, 45%);
+    --color-gray-blue-light: hsl(223, 64%, 98%);
+    --border-color: #e2e7ee;
+
+    --max-width: 125rem;
+
+    @media screen and (max-width: 27em) {
+        --max-width: 100%;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    // overflow: hidden;
+    flex-direction: column;
+}

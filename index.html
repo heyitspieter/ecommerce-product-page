@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Product Page</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <script type="module" src="/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header role="header" class="header">
+        <div class="header__logo">
+          <div class="header__navBtn">
+            <button class="btn--menu">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="/assets/svg/sprite.svg#menu" />
+              </svg>
+            </button>
+          </div>
+          <figure>
+            <img
+              src="/assets/svg/logo.svg"
+              width="138"
+              height="20"
+              alt="Logo"
+            />
+          </figure>
+        </div>
+        <nav role="navigation" class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item"><a href="#">Collections</a></li>
+            <li class="navigation__list-item"><a href="#">Men</a></li>
+            <li class="navigation__list-item"><a href="#">Women</a></li>
+            <li class="navigation__list-item"><a href="#">About</a></li>
+            <li class="navigation__list-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <nav role="menu" class="navigation__menu">
+          <div class="navigation__cart">
+            <input type="checkbox" id="cart-menu" />
+            <label for="cart-menu" class="cart-badge" role="button">
+              <!-- <span>3</span> -->
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <use href="/assets/svg/sprite.svg#cart" />
+                </svg>
+              </div>
+            </label>
+            <div id="cart-overlay" class="cart">
+              <div class="cart__wrapper">
+                <!-- <div class="cart__head">
+                  <h3>Cart</h3>
+                </div> -->
+
+                <!-- Cart Empty -->
+
+                <!-- <div class="cart__empty">
+                  <p>Your cart is empty</p>
+                </div> -->
+
+                <!-- Cart Empty -->
+
+                <!-- <div class="cart__list">
+                  <div class="cart__list-item">
+                    <figure>
+                      <img
+                        src="/assets/img/image-product-1-thumbnail.jpg"
+                        alt="cart image"
+                      />
+                    </figure>
+                    <div>
+                      <p>Fall Limited Edition Sneakers</p>
+                      <span>$125.00 x 3 <span>$375.00</span></span>
+                    </div>
+                    <button class="btn--delete">
+                      <svg xmlns="http://www.w3.org/2000/svg">
+                        <use href="/assets/svg/sprite.svg#trash" />
+                      </svg>
+                    </button>
+                  </div>
+                </div> -->
+
+                <!-- <div class="cart__btn">
+                  <button>Checkout</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="navigation__profile">
+            <button>
+              <img src="/assets/img/image-avatar.png" alt="Profile Picture" />
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="product">
+          <!-- <div class="product-image">
+            <button class="product-btn--prev">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="/assets/svg/sprite.svg#arrow-left" />
+              </svg>
+            </button>
+            <div class="product-image__wrapper">
+              <div class="product-image__slider">
+                <img src="/assets/img/image-product-1.jpg" alt="Main Image" />
+              </div>
+            </div>
+            <button class="product-btn--next">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="/assets/svg/sprite.svg#arrow-right" />
+              </svg>
+            </button>
+            <div class="product-image__thumbnails">
+              <div role="button" class="product-thumbnail-1 product-btn--ctrl active">
+                <img
+                  src="/assets/img/image-product-1-thumbnail.jpg"
+                  alt="thumbnail 1"
+                />
+              </div>
+              <div role="button" class="product-thumbnail-2 product-btn--ctrl">
+                <img
+                  src="/assets/img/image-product-2-thumbnail.jpg"
+                  alt="thumbnail 2"
+                />
+              </div>
+              <div role="button" class="product-thumbnail-3 product-btn--ctrl">
+                <img
+                  src="/assets/img/image-product-3-thumbnail.jpg"
+                  alt="thumbnail 3"
+                />
+              </div>
+              <div role="button" class="product-thumbnail-4 product-btn--ctrl">
+                <img
+                  src="/assets/img/image-product-4-thumbnail.jpg"
+                  alt="thumbnail 4"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-tag">
+              <p>Sneaker company</p>
+            </div>
+            <div class="product-heading">
+              <h1>Fall Limited Edition Sneakers</h1>
+            </div>
+            <div class="product-description">
+              <p>
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+            </div>
+            <div class="product-value">
+              <div class="product-value__price">
+                <p>$125.00</p>
+                <span>50%</span>
+              </div>
+              <div class="product-value__discount">
+                <p>$250.00</p>
+              </div>
+            </div>
+            <div class="product-menu">
+              <div class="product-qty-selector">
+                <span class="btn--subtract">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/svg/sprite.svg#minus" />
+                  </svg>
+                </span>
+                <span class="num">0</span>
+                <span class="btn--add">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="/assets/svg/sprite.svg#plus" />
+                  </svg>
+                </span>
+              </div>
+              <div class="product-btn">
+                <button type="button" class="btn--cart-add">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use href="/assets/svg/sprite.svg#cart" />
+                    </svg>
+                  </span>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div> -->
+        </section>
+      </main>
+    </div>
+    <!-- Modal-->
+
+    <div id="modal-overlay"></div>
+
+    <!-- <div id="modal-overlay" class="modal">
+      <div class="modal-wrapper close">
+        <button class="modal-btn--close">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <use href="/assets/svg/sprite.svg#x" />
+          </svg>
+        </button>
+        <div class="modal-main">
+          <button class="modal-btn--ctrl modal-btn--prev">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <use href="/assets/svg/sprite.svg#arrow-left" />
+            </svg>
+          </button>
+          <div class="modal-main__wrapper">
+            <div class="modal-main__slider">
+              <img src="/assets/img/image-product-1.jpg" alt="Main Image" />
+            </div>
+          </div>
+          <button class="modal-btn--ctrl modal-btn--next">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <use href="/assets/svg/sprite.svg#arrow-right" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-grid">
+          <div role="button" class="product-thumbnail-1 modal-btn--ctrl active">
+            <img
+              src="/assets/img/image-product-1-thumbnail.jpg"
+              alt="thumbnail 1"
+            />
+          </div>
+          <div role="button" class="product-thumbnail-2 modal-btn--ctrl">
+            <img
+              src="/assets/img/image-product-2-thumbnail.jpg"
+              alt="thumbnail 2"
+            />
+          </div>
+          <div role="button" class="product-thumbnail-3 modal-btn--ctrl">
+            <img
+              src="/assets/img/image-product-3-thumbnail.jpg"
+              alt="thumbnail 3"
+            />
+          </div>
+          <div role="button" class="product-thumbnail-4 modal-btn--ctrl">
+            <img
+              src="/assets/img/image-product-4-thumbnail.jpg"
+              alt="thumbnail 4"
+            />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Modal-->
+
+    <!-- Sidebar Menu-->
+
+    <div id="sidebar-overlay"></div>
+
+    <!-- <div id="sidebar" class="sidebar">
+      <div class="sidebar-wrapper close">
+        <button class="sidebar__btn">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <use href="${sprite}#x" />
+          </svg>
+        </button>
+        <nav role="navigation" class="sidebar__menu">
+          <ul class="sidebar__menu-list">
+            <li class="sidebar__menu-item"><a href="#">Collections</a></li>
+            <li class="sidebar__menu-item"><a href="#">Men</a></li>
+            <li class="sidebar__menu-item"><a href="#">Women</a></li>
+            <li class="sidebar__menu-item"><a href="#">About</a></li>
+            <li class="sidebar__menu-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+
+    <!-- Sidebar Menu-->
+  </body>
+</html>
