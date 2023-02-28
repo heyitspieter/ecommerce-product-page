@@ -76,7 +76,10 @@ class ProductView extends View {
             <div class="product-image__wrapper">
               <div class="product-image__slider">
               ${this._data.product.img.slides
-                .map(slide => `<img src="${slide.src}" alt="Main Image" />`)
+                .map(
+                  slide =>
+                    `<img width="400" height="400" src="${slide.src}" alt="Main Image" />`
+                )
                 .join('')}
               </div>
             </div>

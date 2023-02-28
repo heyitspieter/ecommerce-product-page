@@ -5,17 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Product Page</title>
-    <link
-      rel="shortcut icon"
-      href="/assets/img/favicon-32x32.png"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="/assets/img/favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.min.css" />
-    <script type="module" src="/js/controller.js"></script>
   </head>
   <body>
     <div class="container">
-      <header role="header" class="header">
+      <header class="header">
         <div class="header__logo">
           <div class="header__navBtn">
             <button class="btn--menu">
@@ -33,7 +28,7 @@
             />
           </figure>
         </div>
-        <nav role="navigation" class="navigation">
+        <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__list-item"><a href="#">Collections</a></li>
             <li class="navigation__list-item"><a href="#">Men</a></li>
@@ -42,10 +37,10 @@
             <li class="navigation__list-item"><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <nav role="menu" class="navigation__menu">
+        <nav class="navigation__menu">
           <div class="navigation__cart">
             <input type="checkbox" id="cart-menu" />
-            <label for="cart-menu" class="cart-badge" role="button">
+            <label for="cart-menu" class="cart-badge">
               <!-- <span>3</span> -->
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +105,7 @@
             </button>
             <div class="product-image__wrapper">
               <div class="product-image__slider">
-                <img src="/assets/img/image-product-1.jpg" alt="Main Image" />
+                <img width="400" height="400" src="/assets/img/image-product-1.jpg" alt="Main Image" />
               </div>
             </div>
             <button class="product-btn--next">
@@ -280,5 +275,6 @@
     </div> -->
 
     <!-- Sidebar Menu-->
+    <script type="module" src="/js/controller.js"></script>
   </body>
 </html>
